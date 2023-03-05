@@ -1,0 +1,12 @@
+name: BanPlugin-Trial
+main: nl.itz_kiwisap_.devroom.banplugin.BanPlugin
+version: ${project.version}
+author: Itz_KiwiSap_
+api-version: 1.19
+description: Trial project for DevRoom
+
+commands:
+  ban:
+    aliases: [tempban]
+  history:
+  unban:

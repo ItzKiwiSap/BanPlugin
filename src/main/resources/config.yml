@@ -1,0 +1,88 @@
+database:
+  host: 'localhost'
+  port: 3306
+  database: 'database'
+  username: 'username'
+  password: 'password'
+
+messages:
+  ban-command-usage: '&cUsage: /ban <player> [duration] [reason]'
+  unban-command-usage: '&cUsage: /unban <player>'
+  history-command-usage: '&cUsage: /history <player>'
+  permanent: 'permanent'
+  no-reason-specified: 'No reason specified.'
+  only-players-can-execute-command: '&cOnly players can execute this command.'
+  player-not-found: '&cPlayer not found.'
+  invalid-player-name: '&cInvalid player name.'
+  invalid-duration: '&cInvalid duration.'
+  player_already_banned: '&cPlayer is already banned.'
+  player-not-banned: '&cPlayer is not banned.'
+  player-banned: '&aBanned %player% for a duration of %duration% for %reason%.'
+  player-unbanned: '&aUnbanned %player%.'
+  player-ban-kick-message:
+    - '&4&lSERVER NAME'
+    - '&cYou have been banned.'
+    - ''
+    - '&cDuration: &f%duration%'
+    - '&cReason: &f%reason%'
+    - '&cBanned by: &f%banned_by%'
+
+history-menu:
+    title: 'History of %player%'
+    pattern: # * is used for a history item
+      - '*********'
+      - '*********'
+      - '*********'
+      - '*********'
+      - 'bbbbbbbbb'
+      - 'p   c   n'
+    items:
+      'b':
+        material: 'BLACK_STAINED_GLASS_PANE'
+      close-item:
+        symbol: 'c'
+        material: 'BARRIER'
+        name: '&cClose'
+        lore:
+        - '&7Click to close the menu.'
+      next-page-item:
+        symbol: 'n'
+        show-on-last-page: false
+        material: 'ARROW'
+        name: '&bNext page'
+        lore:
+          - '&7Click to go to the next page.'
+      previous-page-item:
+        symbol: 'p'
+        show-on-first-page: false
+        material: 'ARROW'
+        name: '&bPrevious page'
+        lore:
+        - '&7Click to go to the previous page.'
+      history-item:
+        material: 'PAPER'
+        name: '&cBan'
+        lore:
+        - '&7Banned at: &f%banned_at%'
+        - '&7Banned by: &f%banned_by%'
+        - '&7Duration: &f%duration%'
+        - '&7Reason: &f%reason%'
+      history-expired-item:
+        material: 'MAP'
+        name: '&cBan &e&l&o(EXPIRED)'
+        lore:
+          - '&7Banned at: &f%banned_at%'
+          - '&7Banned by: &f%banned_by%'
+          - '&7Duration: &f%duration%'
+          - '&7Reason: &f%reason%'
+      history-unbanned-item:
+        material: 'MAP'
+        name: '&cBan &6&l&o(REMOVED)'
+        lore:
+          - '&7Banned at: &f%banned_at%'
+          - '&7Banned by: &f%banned_by%'
+          - '&7Duration: &f%duration%'
+          - '&7Reason: &f%reason%'
+          - ''
+          - '&7Unbanned at: &f%unbanned_at%'
+          - '&7Unbanned by: &f%unbanned_by%'
