@@ -64,7 +64,7 @@ public final class HistoryMenuReader {
             return DisplayItem.of(ItemBuilder.fromConfig(
                     itemSection,
                     PlaceholderResolver.builder()
-                            .placeholder("%player%", MojangFetcher.getName(ban.getBannedUuid()))
+                            .placeholder("player", MojangFetcher.getName(ban.getBannedUuid()))
                             .placeholder("banned_by", MojangFetcher.getName(ban.getBannedByUuid()))
                             .placeholder("banned_at", TimeUtils.formatDate(ban.getBannedAt().toEpochMilli()))
                             .placeholder("reason", (ban.getReason() == null) ? Messages.NO_REASON_SPECIFIED.get() : ban.getReason())
@@ -80,7 +80,7 @@ public final class HistoryMenuReader {
             return DisplayItem.of(ItemBuilder.fromConfig(
                     itemSection,
                     PlaceholderResolver.builder()
-                            .placeholder("%player%", MojangFetcher.getName(ban.getBannedUuid()))
+                            .placeholder("player", MojangFetcher.getName(ban.getBannedUuid()))
                             .placeholder("banned_by", MojangFetcher.getName(ban.getBannedByUuid()))
                             .placeholder("banned_at", TimeUtils.formatDate(ban.getBannedAt().toEpochMilli()))
                             .placeholder("reason", (ban.getReason() == null) ? Messages.NO_REASON_SPECIFIED.get() : ban.getReason())
@@ -96,7 +96,7 @@ public final class HistoryMenuReader {
             return DisplayItem.of(ItemBuilder.fromConfig(
                     itemSection,
                     PlaceholderResolver.builder()
-                            .placeholder("%player%", MojangFetcher.getName(ban.getBannedUuid()))
+                            .placeholder("player", MojangFetcher.getName(ban.getBannedUuid()))
                             .placeholder("banned_by", MojangFetcher.getName(ban.getBannedByUuid()))
                             .placeholder("banned_at", TimeUtils.formatDate(ban.getBannedAt().toEpochMilli()))
                             .placeholder("reason", (ban.getReason() == null) ? Messages.NO_REASON_SPECIFIED.get() : ban.getReason())
